@@ -9,7 +9,6 @@ const InputWrapper = (props) => {
     <label className={styles.label}>
       <Field name={name}>{
         ({field, form, meta})=>{
-          // console.log(meta)
           const classNames = cx(styles.input,{
             [styles.valid]: meta.touched && !meta.error,
             [styles.invalid]: meta.touched && meta.error,

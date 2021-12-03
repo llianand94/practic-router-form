@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
     <header className={styles.container}>        
           <Logo/>
-          {props.children}        
+          <Link className={styles.link} to="/sing-in">Sing IN page</Link>        
     </header>
   );
 }
