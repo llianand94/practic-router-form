@@ -1,12 +1,16 @@
 .container{
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
   align-items: center;
 }
 .link{
   display: block;
-  padding: 0.3rem 0.6rem;
-  border:1px solid cadetblue;
-  text-decoration: none;
   margin-right: 1rem;
+  padding: 0.3rem 0.6rem;
+  border:1px solid ivory;
+  border-radius: 3px;
+  font-weight: 600;
+  text-decoration: none;
+  color:ivory
 }

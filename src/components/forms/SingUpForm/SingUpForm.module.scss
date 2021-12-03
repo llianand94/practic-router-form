@@ -1,7 +1,25 @@
 .container{
   display: flex;
-  flex-direction: column;  
+  min-width: 300px;
+  max-width: 650px;
+  flex-direction: column;
+  margin: 0 auto; 
 }
+.inputWrapper{
+  display: flex;
+  height: 220px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.addInput{
+ padding: 0.8rem;
+}
+.addLabel{
+  width: 45%;
+}
+
 .submit{
   margin-top: 1rem;
   width: -webkit-fill-available;

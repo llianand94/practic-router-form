@@ -1,14 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import SingInForm from '../../components/forms/SingInForm';
 import styles from './SingInPage.module.scss';
 
 const SingInPage = (props) => {
-
-  return <>        
-      <h1> This is a sing-in page</h1>
-      <SingInForm/>
-      </> 
+  const onSubmit = (values, formikBag) => {
+    formikBag.resetForm();
+  }
+  return <div className={styles.container}>
+        <h1 className={styles.formHeader}> Login to your account</h1>
+        <SingInForm onSubmit={onSubmit}/>
+      </div>        
+      
+      
 }
 
 export default SingInPage;

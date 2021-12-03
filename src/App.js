@@ -11,8 +11,8 @@ function App() {
       <Header/>     
       <Routes>
         <Route path='/' element={<p>Hello it's the main page</p>}/>
-        <Route path='/sing-in' element={<SingInPage/>}/>
-        <Route path='/sing-up' element={<SingUpPage/>}/>
+        <Route path='/singin' element={<SingInPage/>}/>
+        <Route path='/singup' element={<SingUpPage/>}/>
       </Routes>
     </BrowserRouter>
   );

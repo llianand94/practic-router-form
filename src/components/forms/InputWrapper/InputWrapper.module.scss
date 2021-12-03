@@ -1,14 +1,13 @@
 .label{
   display: block;
-  position: relative;
-  &+.label{
-    margin-top: 1rem;
-  }
+  position: relative;  
 }
 .input{
-  min-width: 100%;
+  width: -webkit-fill-available;
   padding: 1rem;
-  background-color: transparent;  
+  border-radius: 3px;
+  border: 1px solid rgb(226, 224, 224);
+  outline-style: rgb(226, 224, 224); 
 }
 .valid{
   border-color: #09c709fb;
@@ -18,13 +17,16 @@
 }
 .error{
   position: absolute;
+  width: 80%;
+  height: 1.5rem;
   top: -1rem;
   left: 15%;
   margin: 0 auto;
-  width: 80%;
-  height: 1.5rem;
-  vertical-align: 1.5rem;
-  border: 1px solid rgb(122, 103, 77);
+  padding-left: 0.5rem;  
+  vertical-align: middle;
+  line-height: 1.5rem;
+  border: 1px solid #117977;
   border-radius: 4px;
-  background-color: rgb(222, 184, 135);
+  background-color: #daf5f4;
+  color: #101616;
 }

@@ -1,12 +1,18 @@
 import React from "react";
-import Header from "../../components/Header";
+import SingUpForm from "../../components/forms/SingUpForm";
+import styles from './SingUpPage.module.scss';
 
-const SingUnPage = (props) => {
+const SingUpPage = (props) => {  
+    const onSubmit = (values, formikBag) => {
+      formikBag.resetForm();
+    }  
   return (
-    <>      
-      <h1>U are in SingUP page</h1>
-    </>
+    <div className={styles.container}>
+        <h1 className={styles.formHeader}> Create an account</h1>
+        <h2 className={styles.subHeader}>We always keep your name and email address private.</h2>
+        <SingUpForm onSubmit={onSubmit}/>
+      </div>    
   );
 };
 
-export default SingUnPage;
+export default SingUpPage;
