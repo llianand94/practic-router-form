@@ -1,23 +1,33 @@
+
+
 .container{
   display: flex;
   min-width: 300px;
   max-width: 650px;
   flex-direction: column;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .inputWrapper{
   display: flex;
-  height: 220px;
-  flex-direction: row;
+  min-height: 400px;
+  max-height: 500px;  
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  
+  @media screen and (min-width: 566px) {
+    flex-direction: row;
+    min-height: 220px;
+    max-height: 350px;
+  }
 }
 .addInput{
- padding: 0.8rem;
+ 
 }
 .addLabel{
-  width: 45%;
+  width: 100%;
+  @media screen and (min-width: 566px) {
+    width: 45%;
+  }
 }
 
 .submit{

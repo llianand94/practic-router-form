@@ -10,10 +10,12 @@
   outline-style: rgb(226, 224, 224); 
 }
 .valid{
-  border-color: #09c709fb;
+  border: 1px solid #09c709fb;
+  background-color: #bcf3bc;
 }
 .invalid{
-  border-color: #ff000033;
+  border: 1px solid #ff000033;
+  background-color: #e28080;
 }
 .error{
   position: absolute;

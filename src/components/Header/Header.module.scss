@@ -2,14 +2,19 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  margin: 1rem auto;
+  min-width: 300px;
+  max-width: 650px;
   align-items: center;
 }
 .link{
   display: block;
+  width: 75px;
   margin-right: 1rem;
   padding: 0.3rem 0.6rem;
   border:1px solid ivory;
   border-radius: 3px;
+  font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
   color:ivory

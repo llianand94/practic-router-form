@@ -15,7 +15,7 @@ const initialValues ={
 const SingUpForm = (props) => {
   const {onSubmit}= props; 
   return (
-    <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={SIGN_UP_SCHEMA}>{
+    <Formik initialValues={initialValues} onSubmit={()=>onSubmit()} validationSchema={SIGN_UP_SCHEMA}>{
       (formikProps)=>{
         return <Form className={styles.container}>
           <div className={styles.inputWrapper}>
