@@ -1,16 +1,12 @@
-
+@import './../../../common/styles/templates';
 
 .container{
-  display: flex;
-  min-width: 300px;
-  max-width: 650px;
-  flex-direction: column;
-  margin: 0 auto;
+  @extend %formContainer;
 }
-.inputWrapper{
+.inputWrapper {
   display: flex;
   min-height: 400px;
-  max-height: 500px;  
+  max-height: 500px;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -20,27 +16,36 @@
     max-height: 350px;
   }
 }
-.addInput{
- 
+.addInput {
 }
-.addLabel{
+.addLabel {
   width: 100%;
   @media screen and (min-width: 566px) {
     width: 45%;
   }
 }
 
-.submit{
-  margin-top: 1rem;
-  width: -webkit-fill-available;
-  padding: 1rem 0.5rem;  
-  border-radius: 3px;
-  border: 1px solid #28d2d0;; 
-  outline-style: #28d2d0;;  
-  background-color: #28d2d0;
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color:ivory;
-  cursor: pointer;
+.submit {  
+  margin-bottom: 1rem;
+  @extend %submitBtn;
+  
 }
+
+// .labelWrapper {
+//   margin: 0.6rem 0;
+//   padding: 0.5rem;
+//   border: white 1px solid;
+//   border-radius: 3px;
+//   font-size: 1.4rem;
+//   & > label {
+//     display: block;
+//     cursor: pointer;
+//   }
+// }
+// .radio {
+//   margin-right: 0.5rem;
+// }
+// .radioSubtext {
+//   font-size: 0.8rem;
+//   padding-left: 1.8rem;
+// }

@@ -1,0 +1,18 @@
+.labelWrapper {
+  margin: 0.6rem 0;
+  padding: 0.5rem;
+  border: white 1px solid;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  & > label {
+    display: block;
+    cursor: pointer;
+  }
+}
+.radio {
+  margin-right: 0.5rem;
+}
+.radioSubtext {
+  font-size: 0.8rem;
+  padding-left: 1.8rem;
+}

@@ -13,9 +13,9 @@ const SingInForm = (props) => {
   return (
     <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={SIGN_IN_SCHEMA}>{
       (formikProps)=>{
-        return <Form className={styles.container}>
-        <InputWrapper name='email' type='name' placeholder='Enter your email'/>
-        <InputWrapper name='password' type='password' placeholder='Enter your password'/>
+        return <Form className={styles.container}>          
+            <InputWrapper addStyleLabel={styles.addLabel} addStyleInput={styles.addInput} name='email' type='name' placeholder='Email address'/>
+            <InputWrapper addStyleLabel={styles.addLabel} addStyleInput={styles.addInput} name='password' type='password' placeholder='Password'/>                 
         <button className={styles.submit} type='submit'>LOGIN</button>
       </Form>
       }

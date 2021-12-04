@@ -1,3 +1,20 @@
-%backgroundColor{
-  background-color: #3ea9f5;
+%formContainer{
+  display: flex;
+  min-width: 300px;
+  max-width: 650px;
+  flex-direction: column;
+  margin: 0 auto; 
+}
+%submitBtn{
+  margin-top: 1rem;
+  width: -webkit-fill-available;
+  padding: 1rem 0.5rem;  
+  border-radius: 3px;
+  border: 1px solid #28d2d0;; 
+  outline-style: #28d2d0;;  
+  background-color: #28d2d0;
+  font-size: 1rem;
+  font-weight: 600;
+  color:ivory;
+  cursor: pointer;
 }
