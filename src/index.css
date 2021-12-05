@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* @extend %backgroundColor; */
   background-color: #3ea9f5;
-  color:ivory;
+  color:rgb(255, 255, 246);
 }
 
 code {

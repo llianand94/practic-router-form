@@ -1,7 +1,9 @@
+@use '../../../common/styles/variables' as v;
+
 .labelWrapper {
   margin: 0.6rem 0;
   padding: 0.5rem;
-  border: white 1px solid;
+  border: v.$lightColor 1px solid;
   border-radius: 3px;
   font-size: 1.4rem;
   & > label {

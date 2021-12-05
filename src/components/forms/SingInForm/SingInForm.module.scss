@@ -1,12 +1,7 @@
 @import './../../../common/styles/templates';
 
 .container{
-  @extend %formContainer;
-//   display: flex;
-//   min-width: 300px;
-//   max-width: 650px;
-//   flex-direction: column;
-//   margin: 0 auto; 
+  @extend %formContainer; 
 }
 
 .addLabel{
@@ -16,17 +11,5 @@
   padding: 1.2rem
 }
 .submit{
-  @extend %submitBtn;
-  // margin-top: 1rem;
-  // width: -webkit-fill-available;
-  // padding: 1rem 0.5rem;  
-  // border-radius: 3px;
-  // border: 1px solid #28d2d0;; 
-  // outline-style: #28d2d0;;  
-  // background-color: #28d2d0;
-  // font-size: 1rem;
-  // font-weight: 600;
-  // text-transform: uppercase;
-  // color:ivory;
-  // cursor: pointer;
+  @extend %submitBtn;  
 }

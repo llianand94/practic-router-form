@@ -1,3 +1,5 @@
+@use './../../../common/styles/variables' as v;
+
 .label{
   display: block;
   position: relative;  
@@ -6,8 +8,8 @@
   width: -webkit-fill-available;
   padding: 1rem;
   border-radius: 3px;
-  border: 1px solid rgb(226, 224, 224);
-  outline-style: rgb(226, 224, 224);
+  border: 1px solid v.$lightColor;
+  outline-style: v.$lightColor;
   font-size: 1rem; 
 }
 .valid{
@@ -26,10 +28,10 @@
   left: 15%;
   margin: 0 auto;
   padding-left: 0.5rem;  
-  vertical-align: middle;
-  line-height: 1.5rem;
   border: 1px solid #117977;
   border-radius: 4px;
+  vertical-align: middle;
+  line-height: 1.5rem;
   background-color: #daf5f4;
   color: #101616;
 }

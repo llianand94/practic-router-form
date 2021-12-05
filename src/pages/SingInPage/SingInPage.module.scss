@@ -1,14 +1,9 @@
+
+@use './../../common/styles/templates';
+
 .container{
-  width: 90%;
-  margin: 0 auto;
+  @extend %pageContainer;
 }
 .formHeader{
-  margin-top: 3rem;
-  margin-bottom: 1.3rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align:center;
-  line-height: 1.4rem;
-  color:ivory;
+  @extend %formHeader;
    }
